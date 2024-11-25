@@ -4,7 +4,6 @@ import com.aliyun.dysmsapi20170525.Client;
 import com.aliyun.dysmsapi20170525.models.QuerySmsSignListRequest;
 import com.aliyun.dysmsapi20170525.models.QuerySmsSignListResponse;
 import com.aliyun.teaopenapi.models.Config;
-import com.aliyun.teautil.models.RuntimeOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,8 +39,7 @@ public class QuerySmsSignService {
                     .setPageIndex(pageIndex)
                     .setPageSize(pageSize);
 
-            RuntimeOptions runtime = new RuntimeOptions();
-            QuerySmsSignListResponse response = client.querySmsSignListWithOptions(queryRequest, runtime);
+            QuerySmsSignListResponse response = client.querySmsSignList(queryRequest);
 
             // 获取响应内容
             String code = response.body.code;

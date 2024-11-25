@@ -60,7 +60,7 @@ public class SendSmsService {
             // 根据响应码记录日志和返回结果
             if ("OK".equals(code)) {
                 logger.info("SMS sent successfully: PhoneNumbers={}, Code={}, Message={}", phoneNumbers, code, message);
-                return "Success";
+                return "Success" + message;
             } else {
                 logger.error("Failed to send SMS: PhoneNumbers={}, Code={}, Message={}", phoneNumbers, code, message);
                 return String.format("Error: %s - %s", code, message);

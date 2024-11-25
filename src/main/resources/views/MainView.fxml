@@ -7,9 +7,15 @@
     <!-- 顶部导航栏 -->
     <top>
         <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10px; -fx-background-color: #ffffff;">
+            <!-- 厂商选择 -->
+            <Label text="选择厂商:" />
+            <ComboBox fx:id="vendorComboBox" />
+
+            <!-- 功能按钮 -->
             <Button text="发送短信" fx:id="sendSmsButton" />
             <Button text="查询短信" fx:id="querySmsButton" />
             <Button text="查询签名" fx:id="querySmsSignButton" />
+            <Button text="查询模版" fx:id="querySmsTemplateButton" />
             <Button text="其他功能" fx:id="otherFunctionButton" />
         </HBox>
     </top>

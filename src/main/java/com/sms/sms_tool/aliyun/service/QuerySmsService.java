@@ -44,8 +44,7 @@ public class QuerySmsService {
                     .setCurrentPage(Long.valueOf(currentPage));
 
             // 查询短信发送详情
-            RuntimeOptions runtimeOptions = new RuntimeOptions();
-            QuerySendDetailsResponse response = client.querySendDetailsWithOptions(request, runtimeOptions);
+            QuerySendDetailsResponse response = client.querySendDetails(request);
 
             // 获取响应内容
             String code = response.body.code;
