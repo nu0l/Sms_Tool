@@ -1,9 +1,12 @@
 package com.sms.sms_tool.aliyun.controller;
 
+import com.sms.sms_tool.aliyun.service.QuerySmsSignService;
 import com.sms.sms_tool.aliyun.service.SendSmsService;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +15,7 @@ import static com.sms.sms_tool.aliyun.config.AliyunConfig.ACCESS_KEY;
 import static com.sms.sms_tool.aliyun.config.AliyunConfig.ACCESS_SECRET;
 
 public class SendSmsController {
+    private static final Logger logger = LoggerFactory.getLogger(SendSmsController.class);
 
     @FXML
     private TextField phoneNumberField;
@@ -42,6 +46,7 @@ public class SendSmsController {
         // 检查必填字段
         if (phoneNumbers.isEmpty() || signName.isEmpty() || templateCode.isEmpty() || templateParam.isEmpty()) {
             resultArea.setText("Error: 请填写所有必需参数！");
+            logger.error("Invalid input parameters");
             return;
         }
 
@@ -54,11 +59,14 @@ public class SendSmsController {
 
             // 显示结果
             resultArea.setText(result);
+            logger.info("SMS sent successfully");
         } catch (IllegalArgumentException e) {
             // 参数解析错误
+            logger.error("Invalid template param format", e);
             resultArea.setText("Error: 模板参数格式不正确！请使用键值对形式（如：key1:value1,key2:value2）。");
         } catch (Exception e) {
             // 其他异常
+            logger.error("Exception occurred while sending SMS", e);
             resultArea.setText("Error: 发送短信失败 - " + e.getMessage());
         }
     }
