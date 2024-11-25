@@ -33,7 +33,7 @@ public class MainController {
 
     @FXML
     public void initialize() {
-        loadView("/views/OtherFunctionView.fxml");
+        loadView("/views/aliyun/OtherFunctionView.fxml");
         // 初始化厂商选择下拉框
         vendorComboBox.setItems(FXCollections.observableArrayList("阿里云", "腾讯云", "华为云"));
         vendorComboBox.getSelectionModel().selectFirst(); // 默认选择第一个厂商
@@ -51,11 +51,11 @@ public class MainController {
         // loadView("/views/SendSmsView.fxml");
 
         // 绑定按钮事件
-        sendSmsButton.setOnAction(event -> loadView("/views/SendSmsView.fxml"));
-        querySmsButton.setOnAction(event -> loadView("/views/QuerySmsView.fxml"));
-        querySmsSignButton.setOnAction(event -> loadView("/views/QuerySmsSignView.fxml"));
-        querySmsTemplateButton.setOnAction(event -> loadView("/views/QuerySmsTemplateView.fxml"));
-        otherFunctionButton.setOnAction(event -> loadView("/views/OtherFunctionView.fxml"));
+        sendSmsButton.setOnAction(event -> loadView("/views/aliyun/SendSmsView.fxml"));
+        querySmsButton.setOnAction(event -> loadView("/views/aliyun/QuerySmsView.fxml"));
+        querySmsSignButton.setOnAction(event -> loadView("/views/aliyun/QuerySmsSignView.fxml"));
+        querySmsTemplateButton.setOnAction(event -> loadView("/views/aliyun/QuerySmsTemplateView.fxml"));
+        otherFunctionButton.setOnAction(event -> loadView("/views/aliyun/OtherFunctionView.fxml"));
     }
 
     private void loadView(String fxmlPath) {

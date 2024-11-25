@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.SendSmsController" spacing="15" alignment="CENTER" style="-fx-background-color: #f4f4f4; -fx-padding: 30px;">
+    <!-- Title Label -->
+    <Label text="发送短信" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4CAF50;" />
+
+    <!-- Input Fields with rounded borders and padding -->
+    <TextField fx:id="phoneNumberField" promptText="请输入手机号" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+    <TextField fx:id="signNameField" promptText="请输入签名" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+    <TextField fx:id="templateCodeField" promptText="请输入模板代码" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+    <TextField fx:id="templateParamField" promptText="请输入模板参数 (例如 key:value)" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+
+    <!-- Send Button with improved style -->
+    <Button text="发送" onAction="#sendSms" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-background-radius: 5px; -fx-effect: innershadow(gaussian, #888888, 5, 0, 0, 0); -fx-cursor: hand;" />
+
+    <!-- Result TextArea with scroll and styling -->
+    <TextArea fx:id="resultArea" editable="false" promptText="结果显示" style="-fx-background-color: #ffffff; -fx-border-radius: 5px; -fx-border-color: #e0e0e0; -fx-font-size: 14px; -fx-padding: 10px;" prefHeight="150" />
+</VBox>

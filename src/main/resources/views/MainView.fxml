@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.MainController">
-    <!-- 顶部导航栏 -->
-    <top>
-        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10px; -fx-background-color: #ffffff;">
-            <!-- 厂商选择 -->
-            <Label text="选择厂商:" />
-            <ComboBox fx:id="vendorComboBox" />
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.MainController" spacing="15" style="-fx-background-color: #f4f4f4; -fx-padding: 20px;">
 
-            <!-- 功能按钮 -->
-            <Button text="发送短信" fx:id="sendSmsButton" />
-            <Button text="查询短信" fx:id="querySmsButton" />
-            <Button text="查询签名" fx:id="querySmsSignButton" />
-            <Button text="查询模版" fx:id="querySmsTemplateButton" />
-            <Button text="其他功能" fx:id="otherFunctionButton" />
-        </HBox>
-    </top>
+    <!-- 一级菜单 - 选择厂商 -->
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <Label text="选择厂商" style="-fx-font-size: 16px; -fx-text-fill: #333333;"/>
+        <ComboBox fx:id="vendorComboBox" style="-fx-font-size: 16px;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="阿里云"/>
+                    <String fx:value="腾讯云"/>
+                    <String fx:value="华为云"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+    </HBox>
 
-    <!-- 中间动态加载内容区域 -->
-    <center>
-        <Pane fx:id="contentPane" />
-    </center>
-</BorderPane>
+    <!-- 分割线 -->
+    <Region style="-fx-background-color: #e0e0e0; -fx-min-height: 1px; -fx-pref-height: 1px; -fx-max-height: 1px; -fx-padding: 5px 0;"/>
+
+    <!-- 二级菜单 - 功能按钮 -->
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <Button fx:id="sendSmsButton" text="发送短信" style="-fx-font-size: 14px; -fx-padding: 8px;"/>
+        <Button fx:id="querySmsButton" text="查询短信" style="-fx-font-size: 14px; -fx-padding: 8px;"/>
+        <Button fx:id="querySmsSignButton" text="查询签名" style="-fx-font-size: 14px; -fx-padding: 8px;"/>
+        <Button fx:id="querySmsTemplateButton" text="查询模板" style="-fx-font-size: 14px; -fx-padding: 8px;"/>
+        <Button fx:id="otherFunctionButton" text="其他功能" style="-fx-font-size: 14px; -fx-padding: 8px;"/>
+    </HBox>
+
+    <!-- 动态加载内容的面板 -->
+    <Pane fx:id="contentPane" style="-fx-background-color: #ffffff; -fx-padding: 20px; -fx-border-radius: 10px; -fx-border-color: #e0e0e0; -fx-border-width: 1px;"/>
+</VBox>

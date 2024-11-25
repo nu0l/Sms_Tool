@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.QuerySmsSignController" spacing="15" alignment="CENTER" style="-fx-background-color: #f4f4f4; -fx-padding: 30px;">
+<!-- Title Label -->
+<Label text="查询签名" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4CAF50;" />
+
+<!-- Input Fields with rounded borders and padding -->
+<TextField fx:id="pageIndexField" promptText="请输入查询数量" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+<TextField fx:id="pageSizeField" promptText="请输入查询页码" style="-fx-font-size: 14px; -fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-padding: 5px 10px; -fx-border-radius: 5px; -fx-border-color: #e0e0e0;" />
+
+<!-- Send Button with improved style -->
+<Button text="发送" onAction="#querySmsSign" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-background-radius: 5px; -fx-effect: innershadow(gaussian, #888888, 5, 0, 0, 0); -fx-cursor: hand;" />
+
+<!-- Result TextArea with scroll and styling -->
+<TextArea fx:id="resultArea" editable="false" promptText="结果显示" style="-fx-background-color: #ffffff; -fx-border-radius: 5px; -fx-border-color: #e0e0e0; -fx-font-size: 14px; -fx-padding: 10px;" prefHeight="150" />
+</VBox>

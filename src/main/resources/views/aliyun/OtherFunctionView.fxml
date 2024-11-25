@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.QuerySmsSignController" spacing="20" alignment="CENTER" style="-fx-background-color: #f4f4f4; -fx-padding: 30px;">
+    <!-- Title Section -->
+    <Label text="短信服务测试工具" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4CAF50; -fx-alignment: center;"/>
+
+    <!-- Subtitle Section -->
+    <Label text="支持厂商" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #333333; -fx-alignment: center;"/>
+
+    <!-- Vendor List Section -->
+    <VBox spacing="10" alignment="CENTER" style="-fx-background-color: #ffffff; -fx-padding: 20px; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #e0e0e0; -fx-border-width: 2px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);">
+        <Label text="阿里云" style="-fx-font-size: 16px; -fx-font-weight: normal; -fx-text-fill: #333333; -fx-alignment: center;"/>
+        <Label text="腾讯云" style="-fx-font-size: 16px; -fx-font-weight: normal; -fx-text-fill: #333333; -fx-alignment: center;"/>
+        <Label text="华为云" style="-fx-font-size: 16px; -fx-font-weight: normal; -fx-text-fill: #333333; -fx-alignment: center;"/>
+    </VBox>
+</VBox>
