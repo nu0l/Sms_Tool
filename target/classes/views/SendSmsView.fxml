@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.sms.sms_tool.aliyun.controller.SendSmsController">
+    <Label text="发送短信" style="-fx-font-size: 18px;" />
+    <TextField fx:id="phoneNumberField" promptText="请输入手机号" />
+    <TextField fx:id="signNameField" promptText="请输入签名" />
+    <TextField fx:id="templateCodeField" promptText="请输入模板代码" />
+    <TextField fx:id="templateParamField" promptText="请输入模板参数 (例如 key:value 格式)" />
+    <Button text="发送" onAction="#sendSms" />
+    <TextArea fx:id="resultArea" editable="false" promptText="结果显示" />
+</VBox>

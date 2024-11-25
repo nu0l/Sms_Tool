@@ -1,0 +1,634 @@
+{
+  "graphName" : "SMS_tool",
+  "artifacts" : [ {
+    "id" : "org.openjfx:javafx-controls:jar",
+    "numericId" : 1,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-controls",
+    "version" : "17.0.6",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-controls:jar:mac-aarch64",
+    "numericId" : 2,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-controls",
+    "version" : "17.0.6",
+    "optional" : false,
+    "classifiers" : [ "mac-aarch64" ],
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-graphics:jar",
+    "numericId" : 3,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-graphics",
+    "version" : "17.0.6",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-graphics:jar:mac-aarch64",
+    "numericId" : 4,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-graphics",
+    "version" : "17.0.6",
+    "optional" : false,
+    "classifiers" : [ "mac-aarch64" ],
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-base:jar",
+    "numericId" : 5,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-base",
+    "version" : "17.0.6",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-base:jar:mac-aarch64",
+    "numericId" : 6,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-base",
+    "version" : "17.0.6",
+    "optional" : false,
+    "classifiers" : [ "mac-aarch64" ],
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.example:SMS_tool:jar",
+    "numericId" : 7,
+    "groupId" : "com.example",
+    "artifactId" : "SMS_tool",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-fxml:jar",
+    "numericId" : 8,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-fxml",
+    "version" : "17.0.6",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.openjfx:javafx-fxml:jar:mac-aarch64",
+    "numericId" : 9,
+    "groupId" : "org.openjfx",
+    "artifactId" : "javafx-fxml",
+    "version" : "17.0.6",
+    "optional" : false,
+    "classifiers" : [ "mac-aarch64" ],
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.junit.jupiter:junit-jupiter-api:jar",
+    "numericId" : 10,
+    "groupId" : "org.junit.jupiter",
+    "artifactId" : "junit-jupiter-api",
+    "version" : "5.9.2",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.opentest4j:opentest4j:jar",
+    "numericId" : 11,
+    "groupId" : "org.opentest4j",
+    "artifactId" : "opentest4j",
+    "version" : "1.2.0",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.junit.platform:junit-platform-commons:jar",
+    "numericId" : 12,
+    "groupId" : "org.junit.platform",
+    "artifactId" : "junit-platform-commons",
+    "version" : "1.9.2",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.apiguardian:apiguardian-api:jar",
+    "numericId" : 13,
+    "groupId" : "org.apiguardian",
+    "artifactId" : "apiguardian-api",
+    "version" : "1.1.2",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.junit.jupiter:junit-jupiter-engine:jar",
+    "numericId" : 14,
+    "groupId" : "org.junit.jupiter",
+    "artifactId" : "junit-jupiter-engine",
+    "version" : "5.9.2",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.junit.platform:junit-platform-engine:jar",
+    "numericId" : 15,
+    "groupId" : "org.junit.platform",
+    "artifactId" : "junit-platform-engine",
+    "version" : "1.9.2",
+    "optional" : false,
+    "scopes" : [ "test" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:dysmsapi20170525:jar",
+    "numericId" : 16,
+    "groupId" : "com.aliyun",
+    "artifactId" : "dysmsapi20170525",
+    "version" : "3.1.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:endpoint-util:jar",
+    "numericId" : 17,
+    "groupId" : "com.aliyun",
+    "artifactId" : "endpoint-util",
+    "version" : "0.0.7",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.bouncycastle:bcpkix-jdk15on:jar",
+    "numericId" : 18,
+    "groupId" : "org.bouncycastle",
+    "artifactId" : "bcpkix-jdk15on",
+    "version" : "1.70",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.bouncycastle:bcprov-jdk15on:jar",
+    "numericId" : 19,
+    "groupId" : "org.bouncycastle",
+    "artifactId" : "bcprov-jdk15on",
+    "version" : "1.70",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.bouncycastle:bcutil-jdk15on:jar",
+    "numericId" : 20,
+    "groupId" : "org.bouncycastle",
+    "artifactId" : "bcutil-jdk15on",
+    "version" : "1.70",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:openapiutil:jar",
+    "numericId" : 21,
+    "groupId" : "com.aliyun",
+    "artifactId" : "openapiutil",
+    "version" : "0.2.1",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "commons-codec:commons-codec:jar",
+    "numericId" : 22,
+    "groupId" : "commons-codec",
+    "artifactId" : "commons-codec",
+    "version" : "1.15",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:credentials-java:jar",
+    "numericId" : 23,
+    "groupId" : "com.aliyun",
+    "artifactId" : "credentials-java",
+    "version" : "0.2.4",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.ini4j:ini4j:jar",
+    "numericId" : 24,
+    "groupId" : "org.ini4j",
+    "artifactId" : "ini4j",
+    "version" : "0.5.4",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "javax.xml.bind:jaxb-api:jar",
+    "numericId" : 25,
+    "groupId" : "javax.xml.bind",
+    "artifactId" : "jaxb-api",
+    "version" : "2.3.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.sun.xml.bind:jaxb-core:jar",
+    "numericId" : 26,
+    "groupId" : "com.sun.xml.bind",
+    "artifactId" : "jaxb-core",
+    "version" : "2.3.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.sun.xml.bind:jaxb-impl:jar",
+    "numericId" : 27,
+    "groupId" : "com.sun.xml.bind",
+    "artifactId" : "jaxb-impl",
+    "version" : "2.3.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:tea-openapi:jar",
+    "numericId" : 28,
+    "groupId" : "com.aliyun",
+    "artifactId" : "tea-openapi",
+    "version" : "0.0.13",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:tea-console:jar",
+    "numericId" : 29,
+    "groupId" : "com.aliyun",
+    "artifactId" : "tea-console",
+    "version" : "0.0.1",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:darabonba-env:jar",
+    "numericId" : 30,
+    "groupId" : "com.aliyun",
+    "artifactId" : "darabonba-env",
+    "version" : "0.1.1",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:tea-util:jar",
+    "numericId" : 31,
+    "groupId" : "com.aliyun",
+    "artifactId" : "tea-util",
+    "version" : "0.2.11",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.google.code.gson:gson:jar",
+    "numericId" : 32,
+    "groupId" : "com.google.code.gson",
+    "artifactId" : "gson",
+    "version" : "2.8.6",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:darabonba-time:jar",
+    "numericId" : 33,
+    "groupId" : "com.aliyun",
+    "artifactId" : "darabonba-time",
+    "version" : "0.0.1",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.jacoco:org.jacoco.agent:jar:runtime",
+    "numericId" : 34,
+    "groupId" : "org.jacoco",
+    "artifactId" : "org.jacoco.agent",
+    "version" : "0.8.4",
+    "optional" : false,
+    "classifiers" : [ "runtime" ],
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:darabonba-string:jar",
+    "numericId" : 35,
+    "groupId" : "com.aliyun",
+    "artifactId" : "darabonba-string",
+    "version" : "0.0.3",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.squareup.okhttp3:okhttp:jar",
+    "numericId" : 36,
+    "groupId" : "com.squareup.okhttp3",
+    "artifactId" : "okhttp",
+    "version" : "3.12.13",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.squareup.okio:okio:jar",
+    "numericId" : 37,
+    "groupId" : "com.squareup.okio",
+    "artifactId" : "okio",
+    "version" : "1.15.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.aliyun:tea:jar",
+    "numericId" : 38,
+    "groupId" : "com.aliyun",
+    "artifactId" : "tea",
+    "version" : "1.3.1",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.slf4j:slf4j-api:jar",
+    "numericId" : 39,
+    "groupId" : "org.slf4j",
+    "artifactId" : "slf4j-api",
+    "version" : "2.0.16",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fasterxml.jackson.core:jackson-databind:jar",
+    "numericId" : 40,
+    "groupId" : "com.fasterxml.jackson.core",
+    "artifactId" : "jackson-databind",
+    "version" : "2.13.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fasterxml.jackson.core:jackson-annotations:jar",
+    "numericId" : 41,
+    "groupId" : "com.fasterxml.jackson.core",
+    "artifactId" : "jackson-annotations",
+    "version" : "2.13.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fasterxml.jackson.core:jackson-core:jar",
+    "numericId" : 42,
+    "groupId" : "com.fasterxml.jackson.core",
+    "artifactId" : "jackson-core",
+    "version" : "2.13.0",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  } ],
+  "dependencies" : [ {
+    "from" : "org.openjfx:javafx-controls:jar",
+    "to" : "org.openjfx:javafx-controls:jar:mac-aarch64",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.openjfx:javafx-graphics:jar",
+    "to" : "org.openjfx:javafx-graphics:jar:mac-aarch64",
+    "numericFrom" : 2,
+    "numericTo" : 3,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.openjfx:javafx-base:jar",
+    "to" : "org.openjfx:javafx-base:jar:mac-aarch64",
+    "numericFrom" : 4,
+    "numericTo" : 5,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.openjfx:javafx-graphics:jar",
+    "to" : "org.openjfx:javafx-base:jar",
+    "numericFrom" : 2,
+    "numericTo" : 4,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.openjfx:javafx-controls:jar",
+    "to" : "org.openjfx:javafx-graphics:jar",
+    "numericFrom" : 0,
+    "numericTo" : 2,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "org.openjfx:javafx-controls:jar",
+    "numericFrom" : 6,
+    "numericTo" : 0,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.openjfx:javafx-fxml:jar",
+    "to" : "org.openjfx:javafx-fxml:jar:mac-aarch64",
+    "numericFrom" : 7,
+    "numericTo" : 8,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "org.openjfx:javafx-fxml:jar",
+    "numericFrom" : 6,
+    "numericTo" : 7,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.junit.jupiter:junit-jupiter-api:jar",
+    "to" : "org.opentest4j:opentest4j:jar",
+    "numericFrom" : 9,
+    "numericTo" : 10,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.junit.jupiter:junit-jupiter-api:jar",
+    "to" : "org.junit.platform:junit-platform-commons:jar",
+    "numericFrom" : 9,
+    "numericTo" : 11,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.junit.jupiter:junit-jupiter-api:jar",
+    "to" : "org.apiguardian:apiguardian-api:jar",
+    "numericFrom" : 9,
+    "numericTo" : 12,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "org.junit.jupiter:junit-jupiter-api:jar",
+    "numericFrom" : 6,
+    "numericTo" : 9,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.junit.jupiter:junit-jupiter-engine:jar",
+    "to" : "org.junit.platform:junit-platform-engine:jar",
+    "numericFrom" : 13,
+    "numericTo" : 14,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "org.junit.jupiter:junit-jupiter-engine:jar",
+    "numericFrom" : 6,
+    "numericTo" : 13,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:dysmsapi20170525:jar",
+    "to" : "com.aliyun:endpoint-util:jar",
+    "numericFrom" : 15,
+    "numericTo" : 16,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.bouncycastle:bcpkix-jdk15on:jar",
+    "to" : "org.bouncycastle:bcprov-jdk15on:jar",
+    "numericFrom" : 17,
+    "numericTo" : 18,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.bouncycastle:bcpkix-jdk15on:jar",
+    "to" : "org.bouncycastle:bcutil-jdk15on:jar",
+    "numericFrom" : 17,
+    "numericTo" : 19,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:openapiutil:jar",
+    "to" : "org.bouncycastle:bcpkix-jdk15on:jar",
+    "numericFrom" : 20,
+    "numericTo" : 17,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:openapiutil:jar",
+    "to" : "commons-codec:commons-codec:jar",
+    "numericFrom" : 20,
+    "numericTo" : 21,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:dysmsapi20170525:jar",
+    "to" : "com.aliyun:openapiutil:jar",
+    "numericFrom" : 15,
+    "numericTo" : 20,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:dysmsapi20170525:jar",
+    "numericFrom" : 6,
+    "numericTo" : 15,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:credentials-java:jar",
+    "to" : "org.ini4j:ini4j:jar",
+    "numericFrom" : 22,
+    "numericTo" : 23,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:credentials-java:jar",
+    "to" : "javax.xml.bind:jaxb-api:jar",
+    "numericFrom" : 22,
+    "numericTo" : 24,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:credentials-java:jar",
+    "to" : "com.sun.xml.bind:jaxb-core:jar",
+    "numericFrom" : 22,
+    "numericTo" : 25,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:credentials-java:jar",
+    "to" : "com.sun.xml.bind:jaxb-impl:jar",
+    "numericFrom" : 22,
+    "numericTo" : 26,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:tea-openapi:jar",
+    "to" : "com.aliyun:credentials-java:jar",
+    "numericFrom" : 27,
+    "numericTo" : 22,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:tea-openapi:jar",
+    "numericFrom" : 6,
+    "numericTo" : 27,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:tea-console:jar",
+    "numericFrom" : 6,
+    "numericTo" : 28,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:darabonba-env:jar",
+    "numericFrom" : 6,
+    "numericTo" : 29,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:tea-util:jar",
+    "to" : "com.google.code.gson:gson:jar",
+    "numericFrom" : 30,
+    "numericTo" : 31,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:tea-util:jar",
+    "numericFrom" : 6,
+    "numericTo" : 30,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:darabonba-time:jar",
+    "to" : "org.jacoco:org.jacoco.agent:jar:runtime",
+    "numericFrom" : 32,
+    "numericTo" : 33,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:darabonba-time:jar",
+    "numericFrom" : 6,
+    "numericTo" : 32,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:darabonba-string:jar",
+    "numericFrom" : 6,
+    "numericTo" : 34,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.squareup.okhttp3:okhttp:jar",
+    "to" : "com.squareup.okio:okio:jar",
+    "numericFrom" : 35,
+    "numericTo" : 36,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:tea:jar",
+    "to" : "com.squareup.okhttp3:okhttp:jar",
+    "numericFrom" : 37,
+    "numericTo" : 35,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.aliyun:tea:jar",
+    "to" : "org.slf4j:slf4j-api:jar",
+    "numericFrom" : 37,
+    "numericTo" : 38,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.aliyun:tea:jar",
+    "numericFrom" : 6,
+    "numericTo" : 37,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.fasterxml.jackson.core:jackson-databind:jar",
+    "to" : "com.fasterxml.jackson.core:jackson-annotations:jar",
+    "numericFrom" : 39,
+    "numericTo" : 40,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.fasterxml.jackson.core:jackson-databind:jar",
+    "to" : "com.fasterxml.jackson.core:jackson-core:jar",
+    "numericFrom" : 39,
+    "numericTo" : 41,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:SMS_tool:jar",
+    "to" : "com.fasterxml.jackson.core:jackson-databind:jar",
+    "numericFrom" : 6,
+    "numericTo" : 39,
+    "resolution" : "INCLUDED"
+  } ]
+}
